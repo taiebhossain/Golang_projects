@@ -38,12 +38,12 @@ type Weather struct {
 }
 
 func main() {
-	// get the weather api key from env file
+	// get api key from env file
 	godotenv.Load()
 	value := os.Getenv("WEATHER_API_KEY")
 	// fmt.Println(value)
 
-	// create api request for weather
+	// request
 	res, err := http.Get("https://api.weatherapi.com/v1/forecast.json?key=" + value + "&q=Chittagong&aqi=no&alerts=no")
 
 	if err != nil {
