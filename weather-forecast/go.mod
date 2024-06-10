@@ -1,4 +1,4 @@
-module github.com/taiebhossain/Golang_projects
+module github.com/taiebhossain/weather-forecast
 
 go 1.21.1
 
